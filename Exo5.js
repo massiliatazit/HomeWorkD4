@@ -6,9 +6,20 @@ Write a function "strivify" which accepts a string S. Add to S "Strive" in front
 const strivify = function (S){
 
   const S1 = 'strive';
-  const SS1 = S.concat(S1);
+  const SS1 = S1.concat(S);
+
+  if (S.startsWith('strive')){
+
+    return S;
+  }
+  else{
+
     return SS1;
+
+  }
+
+
 
 }
 
-console.log(strivify('caramel'));
+console.log(strivify('strive awsome!'));
